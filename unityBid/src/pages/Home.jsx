@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from "../components/Navbar/Navbar"
-import Logo from "../assets/UnityBid-logos_black.png"
+import Logo from "../assets/UnityBid-logos_white.png"
 import "./Home.css"
 
 const Home = () => {
