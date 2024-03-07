@@ -26,7 +26,7 @@ label{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.form-in {
+.reg-form-in {
     flex: 1;
     font-size: 0.9rem;
     width: 15rem;

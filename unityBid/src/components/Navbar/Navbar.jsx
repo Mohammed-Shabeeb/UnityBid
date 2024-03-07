@@ -25,12 +25,13 @@ const Navbar = () => {
 
         <nav className='nav-wrapper'>
             <div className='nav-content'>
-            <input
-                        type="text"
-                        placeholder="Search..."
-                        value={searchTerm}
-                        onChange={handleSearchChange}
-                    />
+                <input
+                    className='home-search'
+                    type="text"
+                    placeholder="Search..."
+                    value={searchTerm}
+                    onChange={handleSearchChange}
+                />
 
                 <ul>
                     <li>

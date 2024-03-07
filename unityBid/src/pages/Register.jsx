@@ -44,14 +44,14 @@ function Register() {
             <label>
               Username:  
             </label>
-            <input className='form-in' type="text" value={username} onChange={e => setUsername(e.target.value)} required />
+            <input className='reg-form-in' type="text" value={username} onChange={e => setUsername(e.target.value)} required />
             
           </div>
           <div className="form-element">
             <label>
               Password:
             </label>
-            <input className='form-in' type="password" value={password} onChange={e => setPassword(e.target.value)} required />
+            <input className='reg-form-in' type="password" value={password} onChange={e => setPassword(e.target.value)} required />
             
           </div>
           <div className="form-element">

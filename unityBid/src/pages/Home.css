@@ -6,8 +6,30 @@
 }
 
 .home-home {
-    height: 100vh;
+    margin-top: 90px;
+    height: 60vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.home-homeName {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-logoContainer img {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.home-homeContent {
+    width: 60%;
+    height: 100%;
 }
 
 .home-communities {
