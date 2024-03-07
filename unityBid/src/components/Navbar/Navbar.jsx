@@ -7,10 +7,16 @@ import { Link as ScrollLink } from 'react-scroll';
  
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
+    const [searchTerm, setSearchTerm] = useState('');
 
     const toggleMenu = () => {
         setOpenMenu(!openMenu);
     };
+
+    const handleSearchChange = (event) => {
+        setSearchTerm(event.target.value);
+    };
+
   return (
    <>
 
@@ -19,22 +25,22 @@ const Navbar = () => {
 
         <nav className='nav-wrapper'>
             <div className='nav-content'>
-                <div className="logo">
-                    <h3>Unity Bid</h3>
-                </div>
+            <input
+                        type="text"
+                        placeholder="Search..."
+                        value={searchTerm}
+                        onChange={handleSearchChange}
+                    />
 
                 <ul>
                     <li>
-                        <ScrollLink className='menu-items' to='home' smooth={true}>Home</ScrollLink>
+                        <ScrollLink className='menu-items' to='home-home' smooth={true}>Home</ScrollLink>
                     </li>
                     <li>
-                        <ScrollLink className='menu-items' to='skills' smooth={true}>Skills</ScrollLink>
+                        <ScrollLink className='menu-items' to='home-communities' smooth={true}>Communities</ScrollLink>
                     </li>
                     <li>
-                        <ScrollLink className='menu-items' to='projects' smooth={true}>Projects</ScrollLink>
-                    </li>
-                    <li> 
-                        <ScrollLink className='menu-items' to='contact' smooth={true}>Contact Me</ScrollLink>
+                        <ScrollLink className='menu-items' to='home-auctions' smooth={true}>Auctions</ScrollLink>
                     </li>
 
                     
