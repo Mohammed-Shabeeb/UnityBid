@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import './Navbar.css'
+import "./Navbar.css"
 import MobileNav from './MobileNav/MobileNav'
 import { FiMenu } from 'react-icons/fi';
 import { Link as ScrollLink } from 'react-scroll';
 
  
-export const Navbar = () => {
+const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
 
     const toggleMenu = () => {
@@ -19,7 +19,9 @@ export const Navbar = () => {
 
         <nav className='nav-wrapper'>
             <div className='nav-content'>
-                <span className="logo" >Mohammed Shabeeb T</span>
+                <div className="logo">
+                    <h3>Unity Bid</h3>
+                </div>
 
                 <ul>
                     <li>
@@ -47,3 +49,5 @@ export const Navbar = () => {
    </>
   )
 }
+
+export default Navbar

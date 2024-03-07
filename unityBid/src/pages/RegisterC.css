@@ -1,9 +1,12 @@
-.container {
-    width: 100%;
+.reg-container {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: linear-gradient(to right, #3e016f, #2a049c);
+    padding: 0;
 }
 
 form {

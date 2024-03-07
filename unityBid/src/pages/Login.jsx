@@ -26,7 +26,7 @@ function Login() {
   };
 
   return (
-    <div className="container">
+    <div className="log-container">
       <form className='log-form' onSubmit={handleSubmit}>
         <div className="form-element">
           <label>Username:</label>
