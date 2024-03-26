@@ -52,3 +52,10 @@ h3{
     height: 100vh;
     width: 100%;
 }
+
+.home-auctions-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
