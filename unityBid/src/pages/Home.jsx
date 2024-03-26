@@ -72,6 +72,21 @@ const Home = () => {
         
       <div className="home-auctions">
         <h3>Auctions</h3>
+
+        <div className="home-auction-content">
+          <Carousel 
+            responsive={responsive}
+            showDots = {true}
+            ssr = {true}
+            infinite = {true}
+            keyBoardControl = {true}
+            
+          >
+            {AUCIONS.map((aution, index) => (
+              <AuctionCard key={index} details={aution} />
+            ))}
+          </Carousel>
+        </div>
         
       </div>
     </div>
